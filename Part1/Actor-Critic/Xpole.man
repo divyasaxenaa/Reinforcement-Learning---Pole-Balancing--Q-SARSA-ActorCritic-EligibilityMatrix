@@ -1,0 +1,7 @@
+/*****************************************************************************/
+/* File:           Xpole.man                                                 */
+/* Description:    Documentation for Graphic simulation of a pole-cart       */
+/* Author:         Manfred Huber                                             */
+/* Modifications :                                                           */
+/*****************************************************************************/
+
