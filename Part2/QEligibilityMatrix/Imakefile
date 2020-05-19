@@ -1,0 +1,14 @@
+LOCAL_LIBRARIES = -Llib/ -lXkw $(XAWLIB) $(XMULIB) $(XTOOLLIB) $(XLIB) \
+	$(XEXTLIB) 
+EXTRA_LIBRARIES = -lm -Llib/ -lXkw 
+EXTRA_INCLUDES = -Iinclude
+
+CC = gcc -fPIC
+CDEBUGFLAGS = -g -ggdb -Wno-deprecated -Wno-deprecated-declarations -Wno-cpp
+
+PROG =  Xpole
+SRCS = Xpole.c Pole_sim.c Matrix_fncs.c Global.c Reinf_learn.c
+OBJS = $(SRCS:.c=.o)
+INCL = Xpole.h Pole_sim.h Reinf_learn.h misc.h
+
+ComplexProgramTarget($(PROG))
